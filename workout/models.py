@@ -3,7 +3,7 @@ from django.db import models
 
 class MuscleGroup(models.Model):
     name = models.CharField(max_length=200, unique=True)
-    Parent_Muscle = models.ForeignKey(
+    Parent_muscle = models.ForeignKey(
         "self", on_delete=models.SET_NULL, null=True, blank=True
     )
     is_active = models.BooleanField(default=True)
