@@ -34,7 +34,7 @@ class ArticleSerializer(serializers.ModelSerializer):
         )
 
 
-class UserActivity(serializers.ModelSerializer):
+class UserActivitySerializer(serializers.ModelSerializer):
     class Meta:
         model = UserActivity
         fields = ("id", "author", "exercise", "time")
